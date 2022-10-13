@@ -103,7 +103,7 @@ function answer(){
         }
     }
     else{
-        alert("first choose the game and start it !!");
+        $('h2').text("first choose the  level game and start it !!");
     }
 }
 //new game

@@ -91,4 +91,13 @@ button{
     left: 0%;
     top: 150%;
 }
+h2{
 
+    color: white;
+    text-align: CENTER;
+    font-family: CURSIVE;
+    font-size: XXX-LARGE;
+    margin-right: 50px;
+    position: relative;
+    right: 30px;
+}
