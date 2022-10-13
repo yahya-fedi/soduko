@@ -91,11 +91,4 @@ button{
     left: 0%;
     top: 150%;
 }
-#lives{
-    position: absolute;
-    top: 13%;
-    left: 72%;
-    color: white;
-    font-weight: bold;
-    font-size: x-large;
-}
+
