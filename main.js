@@ -10,8 +10,7 @@ function help(){
     window.open(
         "https://sudoku.com/how-to-play/sudoku-rules-for-complete-beginners/", "_blank");
 }
-var level;
-var choosen;
+
 
 
 // easy_level board create
@@ -33,6 +32,8 @@ hard_board=['---789-----75-8-4---38-----8---1---6---7-9---2---7---1-----61---5-3
 
 hard=['165789432297518346973821654847312596463729158284675931923546178851364297615439782','861794532617948325156283479492536871928365147784619253753812496345127968239574681','187256349428715963534691872924738156619483572861247395356194287573962418729835641','143657892526738419984361275956238174843591627315782469872149635791426583267954318','783461592318627954179246835569732184625493817246358971142958673497581326835719264'];
 
+var level;
+var choosen;
 
 function start(){
     for(var i=0;i<6;i++){
@@ -46,9 +47,9 @@ function start(){
         var easy_random=Math.floor(Math.random()*5);
         choosen=easy_random;
         for(var i=0;i<81;i++){
-            if(easy_board[easy_random][i]!='-'){
+            if(easy_board[easy_random][i]!=='-'){
                 document.getElementById((i+1).toString()).value=easy_board[easy_random][i];
-                document.getElementById((i+1).toString()).readOnly=true;
+             
             }
         }
     }
@@ -60,9 +61,9 @@ function start(){
         var medium_random=Math.floor(Math.random()*5);
         choosen=medium_random;
         for(var i=0;i<81;i++){
-            if(medium_board[medium_random][i]!='-'){
+            if(medium_board[medium_random][i]!=='-'){
                 document.getElementById((i+1).toString()).value=medium_board[medium_random][i];
-                document.getElementById((i+1).toString()).readOnly=true;
+                
             }
         }
     }
@@ -75,9 +76,9 @@ else{
         var hard_random=Math.floor(Math.random()*5);
         choosen=hard_random;
         for(var i=0;i<81;i++){
-            if(hard_board[hard_random][i]!='-'){
+            if(hard_board[hard_random][i]!=='-'){
                 document.getElementById((i+1).toString()).value=hard_board[hard_random][i];
-                document.getElementById((i+1).toString()).readOnly=true;
+              
             }
         }
 }
