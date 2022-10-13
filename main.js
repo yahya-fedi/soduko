@@ -90,16 +90,19 @@ function answer(){
     if(level=="easy"){
         for(var i=0;i<81;i++){
             document.getElementById((i+1).toString()).value=easy[choosen][i];
+            document.getElementById((i+1).toString()).readOnly=true;
         }
     }
     else if(level=="medium"){
         for(var i=0;i<81;i++){
             document.getElementById((i+1).toString()).value=medium[choosen][i];
+            document.getElementById((i+1).toString()).readOnly=true;
         }
     }
     else if(level=="hard"){
         for(var i=0;i<81;i++){
             document.getElementById((i+1).toString()).value=hard[choosen][i];
+            document.getElementById((i+1).toString()).readOnly=true;
         }
     }
     else{
