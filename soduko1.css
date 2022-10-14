@@ -1,5 +1,5 @@
 body{
-   background-color: hsl(214, 74%, 46%);
+   background-color: rgb(91, 134, 192);
    color:white
 }
 h1{
@@ -46,7 +46,7 @@ input{
     text-align: center;
     font-size: x-large;
     font-weight: bold;
-    background-color:  hsl(214, 74%, 46%);
+    background-color:  rgb(91, 134, 192);
     color: white;
 }
 button{
@@ -55,7 +55,7 @@ button{
     font-size: x-large;
     font-weight: bold;
     background-color: #fff9f9;
-    border: solid 4px black;
+    border: solid 2px rgb(91, 134, 192);
     border-radius: 30px;
     color:  hsl(214, 74%, 46%);
     position: absolute;
@@ -101,3 +101,7 @@ h2{
     position: relative;
     right: 30px;
 }
+
+
+
+
