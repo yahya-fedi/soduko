@@ -49,7 +49,7 @@ function start(){
         for(var i=0;i<81;i++){
             if(easy_board[easy_random][i]!=='-'){
                 document.getElementById((i+1).toString()).value=easy_board[easy_random][i];
-             
+                document.getElementById((i+1).toString()).readOnly=true
             }
         }
     }
@@ -63,7 +63,7 @@ function start(){
         for(var i=0;i<81;i++){
             if(medium_board[medium_random][i]!=='-'){
                 document.getElementById((i+1).toString()).value=medium_board[medium_random][i];
-                
+                document.getElementById((i+1).toString()).readOnly=true
             }
         }
     }
@@ -78,7 +78,7 @@ else{
         for(var i=0;i<81;i++){
             if(hard_board[hard_random][i]!=='-'){
                 document.getElementById((i+1).toString()).value=hard_board[hard_random][i];
-              
+                document.getElementById((i+1).toString()).readOnly=true
             }
         }
 }
