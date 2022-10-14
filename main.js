@@ -36,10 +36,7 @@ var level;
 var choosen;
 
 function start(){
-    for(var i=0;i<6;i++){
-        
-    }
-   
+ 
     //easy game
     
     if(document.getElementById("easy").checked){
@@ -117,5 +114,6 @@ function replay(){
     }
     start();
 }
+
 
 
