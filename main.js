@@ -106,6 +106,111 @@ function answer(){
         $('h2').text("first choose the  level game and start it !!");
     }
 }
+
+//check 
+
+var id=setInterval(() => {
+    if (level=="easy"){
+    if(document.activeElement.className=="input"){
+        if((document.getElementById(document.activeElement.id).value==easy[choosen][document.activeElement.id-1])||(document.getElementById(document.activeElement.id).value=='')){
+            for(var i=0;i<81;i++){
+                if(i==80 && document.getElementById((81).toString()).value!='' ){
+                        $('h2').text("you win !! congratulation.....");
+                        clearInterval(id);
+                        window.location.reload();
+                }
+                else if(document.getElementById((i+1).toString()).value==''){
+                    break;
+                }
+            }
+        }
+        else{
+            if(document.getElementById("rem_live").innerHTML==1){
+                document.getElementById("rem_live").innerHTML==0;
+                $('h2').text("you lost !!");
+                document.activeElement.value='';
+                window.location.reload();
+
+            }
+            else{
+            $('h2').text("you choose wrong number, you loose your one life !!");
+            document.getElementById("rem_live").innerHTML=document.getElementById("rem_live").innerHTML-1;
+            document.activeElement.value='';
+            }
+        }
+
+    }
+}
+
+else if(level=="medium"){
+
+    if(document.activeElement.className=="input"){
+        if((document.getElementById(document.activeElement.id).value==medium[choosen][document.activeElement.id-1])||(document.getElementById(document.activeElement.id).value=='')){
+            for(var i=0;i<81;i++){
+                if(i==80 && document.getElementById((81).toString()).value!='' ){
+                        $('h2').text("you win !! congratulation.....");
+                        clearInterval(id);
+                        window.location.reload();
+                }
+                else if(document.getElementById((i+1).toString()).value==''){
+                    break;
+                }
+            }
+        }
+        else{
+            if(document.getElementById("rem_live").innerHTML==1){
+                document.getElementById("rem_live").innerHTML==0;
+                $('h2').text("you lost !!");
+                document.activeElement.value='';
+                window.location.reload();
+
+            }
+            else{
+            $('h2').text("you choose wrong number, you loose your one life !!");
+            document.getElementById("rem_live").innerHTML=document.getElementById("rem_live").innerHTML-1;
+            document.activeElement.value='';
+            }
+        }
+
+    }
+}
+
+else{
+
+    if(document.activeElement.className=="input"){
+        if((document.getElementById(document.activeElement.id).value==hard[choosen][document.activeElement.id-1])||(document.getElementById(document.activeElement.id).value=='')){
+            for(var i=0;i<81;i++){
+                if(i==80 && document.getElementById((81).toString()).value!='' ){
+                        $('h2').text("you win !! congratulation.....");
+                        clearInterval(id);
+                        window.location.reload();
+                }
+                else if(document.getElementById((i+1).toString()).value==''){
+                    break;
+                }
+            }
+        }
+        else{
+            if(document.getElementById("rem_live").innerHTML==1){
+                document.getElementById("rem_live").innerHTML==0;
+                $('h2').text("you lost !!");
+                document.activeElement.value='';
+                window.location.reload();
+
+            }
+            else{
+            $('h2').text("you choose wrong number, you loose your one life !!");
+            document.getElementById("rem_live").innerHTML=document.getElementById("rem_live").innerHTML-1;
+            document.activeElement.value='';
+            }
+        }
+
+    }
+}
+}, 500);
+
+
+
 //new game
 
 function replay(){
